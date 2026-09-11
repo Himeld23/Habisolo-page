@@ -1,0 +1,89 @@
+import Image from "next/image";
+
+const COLUMNS = [
+  {
+    title: "Investor Resources",
+    links: [
+      { label: "Investor Overview", href: "#top" },
+      { label: "Download Pitch Deck", href: "#" },
+      { label: "Book Investor Meeting", href: "#cta" },
+      { label: "Investment Opportunity", href: "#cta" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { label: "Why Habisolo?", href: "#why-habisolo" },
+      { label: "Market Opportunity", href: "#market" },
+      { label: "Traction", href: "#validation" },
+      { label: "Product Ecosystem", href: "#product-ecosystem" },
+      { label: "Business Model", href: "#business-model" },
+      { label: "Why Invest Now?", href: "#why-now" },
+      { label: "The Founder", href: "#top" },
+    ],
+  },
+  {
+    title: "Legal & Compliance",
+    links: [
+      { label: "Privacy Policy", href: "#" },
+      { label: "Terms of Service", href: "#" },
+      { label: "Investor Legal Terms", href: "#" },
+      { label: "GDPR Data Policy", href: "#" },
+      { label: "Cookie Settings", href: "#" },
+    ],
+  },
+];
+
+export default function InvestorFooter() {
+  return (
+    <footer className="bg-surface-dark text-white">
+      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
+        <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
+          <div>
+            <Image
+              src="/images/logo.png"
+              alt="Habisolo"
+              width={222}
+              height={141}
+              className="h-11 w-auto object-contain"
+              unoptimized
+            />
+            <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/60">
+              Habisolo is building the trust infrastructure for shared
+              living, beginning in Spain and designed for European
+              expansion.
+            </p>
+          </div>
+
+          {COLUMNS.map((column) => (
+            <div key={column.title}>
+              <h3 className="text-xs font-bold tracking-wider text-white/50 uppercase">
+                {column.title}
+              </h3>
+              <ul className="mt-4 space-y-3">
+                {column.links.map((link) => (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      className="text-sm text-white/75 hover:text-white"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-14 border-t border-white/10 pt-8 text-xs text-white/50">
+          <p>
+            &copy; {new Date().getFullYear()} Habisolo. All rights reserved.
+            Figures shown are illustrative and provided for investor
+            discussion.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}

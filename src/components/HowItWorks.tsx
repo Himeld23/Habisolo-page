@@ -53,24 +53,24 @@ export default function HowItWorks() {
         <ol className="space-y-10">
           {STEPS.map((step, index) => (
             <li key={step.title} className="flex gap-5">
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-brand-500 text-lg font-bold text-brand-700">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-[#2E7D32] bg-[#E5E7EB] text-lg font-bold text-brand-700">
                 {index + 1}
               </span>
               <div>
-                <h3 className="text-lg font-bold text-ink">{step.title}</h3>
-                <p className="mt-1 text-muted">{step.description}</p>
+                <h3 className="text-[20px] font-bold text-ink">{step.title}</h3>
+                <p className="mt-1 text-[16px] text-muted">{step.description}</p>
               </div>
             </li>
           ))}
         </ol>
 
-        <div className="overflow-hidden rounded-3xl lg:sticky lg:top-24">
+        <div className="overflow-hidden rounded-3xl lg:sticky lg:top-24 lg:w-[453px]">
           <Image
-            src="/images/how-it-works-face-scan.jpg"
+            src="/images/biometric-id-verification.png"
             alt="Facial verification confirming identity"
-            width={900}
-            height={1200}
-            className="h-auto w-full"
+            width={453}
+            height={647}
+            className="h-auto w-full object-cover lg:h-[647px] lg:w-[453px]"
           />
         </div>
       </div>
