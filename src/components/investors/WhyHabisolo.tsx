@@ -34,7 +34,7 @@ export default function WhyHabisolo() {
     <section id="why-habisolo" className="bg-white py-24">
       <div className="mx-auto max-w-3xl px-6 text-center lg:px-10">
         <SectionBadge icon={HelpCircle} label="Why Habisolo?" />
-        <h2 className="mt-6 text-3xl font-bold text-ink sm:text-[42px]">
+        <h2 className="mt-6 text-3xl font-bold text-[#282828] sm:text-[40px]">
           We solve a problem that has been ignored for decades.
         </h2>
         <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-muted">
@@ -45,7 +45,7 @@ export default function WhyHabisolo() {
 
       <div className="mx-auto mt-16 grid max-w-6xl gap-12 px-6 lg:grid-cols-2 lg:items-start lg:px-10">
         <div>
-          <h3 className="text-xl font-bold text-ink">Solution</h3>
+          <h3 className="text-xl font-bold text-[#282828]">Solution</h3>
           <p className="mt-3 leading-relaxed text-muted">
             Habisolo provides digital trust infrastructure connecting hosts,
             residents, institutions and partners.
@@ -71,7 +71,7 @@ export default function WhyHabisolo() {
                 className="h-7 w-7 text-brand-600"
                 strokeWidth={1.75}
               />
-              <h4 className="mt-4 text-base font-bold text-ink">
+              <h4 className="mt-4 text-base font-bold text-[#282828]">
                 {feature.title}
               </h4>
               <p className="mt-2 text-sm leading-relaxed text-muted">

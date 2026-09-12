@@ -14,7 +14,7 @@ export default function BusinessModel() {
     <section id="business-model" className="bg-surface py-24">
       <div className="mx-auto max-w-3xl px-6 text-center lg:px-10">
         <SectionBadge icon={Landmark} label="Business Model" />
-        <h2 className="mt-6 text-3xl font-bold text-ink sm:text-[42px]">
+        <h2 className="mt-6 text-3xl font-bold text-[#282828] sm:text-[42px]">
           A commission-free model designed around platform, institutional and
           partner revenue
         </h2>
@@ -30,27 +30,27 @@ export default function BusinessModel() {
         {REVENUE_STREAMS.map((stream) => (
           <div
             key={stream.title}
-            className="overflow-hidden rounded-2xl bg-white shadow-sm shadow-black/[0.03]"
+            className="overflow-hidden rounded-2xl  shadow-sm shadow-black/[0.03]"
           >
             <Image
               src={stream.image}
               alt={stream.title}
               width={stream.w}
               height={stream.h}
-              className="h-40 w-full object-cover"
+              className="h-auto w-full"
             />
-            <div className="p-4">
-              <span className="inline-block rounded-lg bg-ink px-3 py-1.5 text-xs font-bold tracking-wide text-white">
-                {stream.title}
-              </span>
-            </div>
           </div>
         ))}
       </div>
 
-      <div className="mx-auto mt-14 max-w-3xl px-6 text-center lg:px-10">
-        <h3 className="text-lg font-bold text-ink">Trust Passport</h3>
-        <p className="mt-2 leading-relaxed text-muted">
+      <div className="mx-auto mt-6 max-w-6xl px-6 lg:px-10">
+        <span
+          className="inline-block rounded-lg bg-[#282828] px-3 py-1.5 text-[20px] font-bold tracking-wide text-white"
+          style={{ marginLeft: 109 }}
+        >
+          Trust Passport
+        </span>
+        <p className="mt-3 max-w-md text-sm leading-relaxed text-muted">
           The Trust Passport is Habisolo&apos;s digital trust layer, bringing
           relevant verified information and trust signals together to help
           people make more informed decisions before entering a shared-living

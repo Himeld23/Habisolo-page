@@ -1,4 +1,5 @@
-import { ArrowRight, Download, Mouse } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, Download } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -23,14 +24,14 @@ export default function Hero() {
         <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
           <a
             href="#cta"
-            className="inline-flex h-[50px] w-fit items-center justify-center gap-2.5 rounded-xl bg-[#2E7D32] px-6 py-4 text-base font-semibold text-white shadow-[0px_8px_32px_4px_rgba(0,0,0,0.15)] transition-transform hover:scale-[1.02]"
+            className="inline-flex h-[50px] w-fit items-center justify-center gap-2.5 rounded-xl bg-[#2E7D32] px-6 py-4 text-[20px] font-semibold text-white shadow-[0px_8px_32px_4px_rgba(0,0,0,0.15)] transition-transform hover:scale-[1.02]"
           >
             Book a Meeting
             <ArrowRight className="h-4 w-4 shrink-0" />
           </a>
           <a
             href="#"
-            className="inline-flex h-[50px] w-fit items-center justify-center gap-2.5 rounded-xl border border-white/30 bg-white/5 px-6 py-4 text-base font-semibold text-white backdrop-blur transition-transform hover:scale-[1.02]"
+            className="inline-flex h-[50px] w-fit items-center justify-center gap-2.5 rounded-xl border border-white/30 bg-white/5 px-6 py-4 text-[20px] font-semibold text-white backdrop-blur transition-transform hover:scale-[1.02]"
           >
             <Download className="h-4 w-4 shrink-0" />
             Download Pitch Deck
@@ -42,7 +43,14 @@ export default function Hero() {
           className="mt-14 flex flex-col items-center gap-2 text-sm font-medium text-white/70 transition-colors hover:text-white"
         >
           Scroll Down
-          <Mouse className="h-5 w-5 animate-bounce" strokeWidth={1.75} />
+          <Image
+            src="/images/mouse-scroll.png"
+            alt=""
+            width={30}
+            height={65}
+            className="h-[65px] w-[30px] animate-bounce"
+            unoptimized
+          />
         </a>
       </div>
     </section>

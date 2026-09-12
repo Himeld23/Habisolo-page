@@ -7,7 +7,7 @@ const NODES = [
     label: "HOST",
     color: "text-brand-600",
     description: "Home owners who list and manage spaces on Habisolo.",
-    top: "33%",
+    top: "29%",
     left: "9%",
     direction: "up",
   },
@@ -42,10 +42,10 @@ const NODES = [
 
 export default function ProductEcosystem() {
   return (
-    <section id="product-ecosystem" className="bg-surface py-24">
+    <section id="product-ecosystem" className="bg-[#F7F7F7] py-24">
       <div className="mx-auto max-w-3xl px-6 text-center lg:px-10">
         <SectionBadge icon={Boxes} label="Product Ecosystem" />
-        <h2 className="mt-6 text-3xl font-bold text-ink sm:text-[42px]">
+        <h2 className="mt-6 text-3xl font-bold text-[#282828] sm:text-[40px]">
           Five interconnected products. One unified trust infrastructure.
         </h2>
         <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-muted">
@@ -64,16 +64,19 @@ export default function ProductEcosystem() {
             className="object-contain"
           />
 
-          <div className="absolute inset-[29%] flex flex-col items-center justify-center text-center leading-tight">
-            <span className="text-[10px] font-extrabold text-ink">TRUST</span>
-            <span className="text-[10px] font-extrabold text-ink">
+          <div
+            className="absolute bottom-[29%] left-[29%] flex flex-col items-center justify-center text-center leading-tight"
+            style={{ top: "-18px", right: "125px" }}
+          >
+            <span className="text-[15px] font-extrabold text-[#282828]">TRUST</span>
+            <span className="text-[15px] font-extrabold text-[#282828]">
               PASSPORT
             </span>
             <span className="my-0.5 text-[9px] font-semibold text-muted">
               =
             </span>
-            <span className="text-[10px] font-extrabold text-ink">TRUST</span>
-            <span className="text-[10px] font-extrabold text-ink">LAYER</span>
+            <span className="text-[15px] font-extrabold text-[#282828]">TRUST</span>
+            <span className="text-[15px] font-extrabold text-[#282828]">LAYER</span>
           </div>
 
           {NODES.map((node) => (
