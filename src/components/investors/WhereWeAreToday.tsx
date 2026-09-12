@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 
 const CARDS = [
   {
@@ -89,20 +88,15 @@ export default function WhereWeAreToday() {
         </div>
 
         <div className="mt-14 flex flex-col gap-8 lg:flex-row lg:items-start">
-          {STAGES.map((stage, index) => (
+          {STAGES.map((stage) => (
             <div key={stage.key} className="flex-1">
-              <div className="flex items-center gap-4">
-                <Image
-                  src={stage.image}
-                  alt={stage.key}
-                  width={370}
-                  height={141}
-                  className="h-auto flex-1"
-                />
-                {index < STAGES.length - 1 && (
-                  <ArrowRight className="hidden h-6 w-6 shrink-0 text-[#282828] lg:block" />
-                )}
-              </div>
+              <Image
+                src={stage.image}
+                alt={stage.key}
+                width={370}
+                height={141}
+                className="h-auto w-full"
+              />
               <h3 className="mt-4 text-lg font-bold text-[#282828]">{stage.key}</h3>
               <ul className="mt-2 space-y-1.5 text-sm text-muted">
                 {stage.items.map((item) => (
