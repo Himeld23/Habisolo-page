@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Trust Passport | Habisolo",
   description:
     "The Habisolo Trust Passport is a digital trust profile that brings together verified information about you, helping hosts, institutions and communities understand who they can trust before a relationship begins.",
+  icons: {
+    icon: "/images/logo.png",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

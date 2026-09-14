@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import CtaButton from "./CtaButton";
+import GoogleTranslate from "./GoogleTranslate";
 
 const NAV_LINKS = [
   { label: "How It Works", href: "#how-it-works" },
@@ -43,7 +44,8 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="hidden shrink-0 lg:block">
+        <div className="hidden shrink-0 items-center gap-4 lg:flex">
+          <GoogleTranslate />
           <CtaButton href="https://habisolo.com" />
         </div>
 
@@ -70,6 +72,9 @@ export default function Header() {
                 {link.label}
               </a>
             ))}
+            <div className="mt-2">
+              <GoogleTranslate />
+            </div>
             <CtaButton
               href="https://habisolo.com"
               className="mt-2"

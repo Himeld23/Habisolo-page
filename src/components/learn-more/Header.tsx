@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import BackHomeButton from "./BackHomeButton";
+import GoogleTranslate from "../GoogleTranslate";
 
 export default function TrustPassportHeader() {
   return (
@@ -18,7 +19,10 @@ export default function TrustPassportHeader() {
           />
         </Link>
 
-        <BackHomeButton />
+        <div className="flex items-center gap-4">
+          <GoogleTranslate />
+          <BackHomeButton />
+        </div>
       </div>
     </header>
   );

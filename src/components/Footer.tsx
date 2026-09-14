@@ -1,5 +1,4 @@
 import Image from "next/image";
-import GoogleTranslate from "./GoogleTranslate";
 
 const COLUMNS = [
   {
@@ -70,10 +69,9 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-8 text-sm text-white/50 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-14 flex flex-col gap-3 border-t border-white/10 pt-8 text-sm text-white/50 sm:flex-row sm:items-center sm:justify-between">
           <p>&copy; {new Date().getFullYear()} Habisolo. All rights reserved.</p>
           <p>Trust Passport is part of the Habisolo ecosystem.</p>
-          <GoogleTranslate />
         </div>
       </div>
     </footer>

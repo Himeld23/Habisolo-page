@@ -42,3 +42,20 @@ h3,
 h4 {
   font-family: var(--font-heading), var(--font-sans), sans-serif;
 }
+
+/* Hide Google Translate's default banner/toolbar so only our custom dropdown shows */
+.goog-te-banner-frame,
+.skiptranslate > iframe {
+  display: none !important;
+}
+body {
+  top: 0 !important;
+}
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}
