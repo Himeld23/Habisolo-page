@@ -45,13 +45,6 @@ export default function WhatIsTrustPassport() {
           The profile evolves as the person participates in the Habisolo
           ecosystem.
         </p>
-
-        <a
-          href="https://habisolo.com"
-          className="mt-2 inline-block font-semibold text-brand-700 hover:underline"
-        >
-          HABISOLO MASTER CORPORATE DOCUMENT.pdf
-        </a>
       </div>
     </section>
   );
