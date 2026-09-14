@@ -45,7 +45,7 @@ export default function FounderVision() {
 
             <div className="mt-6 flex items-center gap-6">
               <a
-                href="mailto:founder@habisolo.com"
+                href="mailto:ikpe.umoh@habisolo.com"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-brand-700 hover:underline"
               >
                 <Mail className="h-4 w-4" />

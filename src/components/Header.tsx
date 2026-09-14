@@ -44,7 +44,7 @@ export default function Header() {
         </nav>
 
         <div className="hidden shrink-0 lg:block">
-          <CtaButton />
+          <CtaButton href="https://habisolo.com" />
         </div>
 
         <button
@@ -70,7 +70,11 @@ export default function Header() {
                 {link.label}
               </a>
             ))}
-            <CtaButton className="mt-2" onClick={() => setOpen(false)} />
+            <CtaButton
+              href="https://habisolo.com"
+              className="mt-2"
+              onClick={() => setOpen(false)}
+            />
           </nav>
         </div>
       )}

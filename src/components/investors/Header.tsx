@@ -46,7 +46,7 @@ export default function InvestorHeader() {
         </nav>
 
         <div className="hidden shrink-0 xl:block">
-          <CtaButton href="#cta" fixedWidth={false} variant="flat">
+          <CtaButton href="mailto:support@habisolo.com" fixedWidth={false} variant="flat">
             Book a Meeting
           </CtaButton>
         </div>
@@ -75,7 +75,7 @@ export default function InvestorHeader() {
               </a>
             ))}
             <CtaButton
-              href="#cta"
+              href="mailto:support@habisolo.com"
               fixedWidth={false}
               className="mt-2"
               onClick={() => setOpen(false)}

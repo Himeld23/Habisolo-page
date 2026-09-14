@@ -13,15 +13,9 @@ export default function InvestorCta() {
         </p>
 
         <div className="mt-9 flex flex-wrap items-center justify-center gap-8">
-          <CtaButton href="mailto:founder@habisolo.com" fixedWidth={false}>
+          <CtaButton href="mailto:ikpe.umoh@habisolo.com" fixedWidth={false}>
             Discuss the Investment Opportunity
           </CtaButton>
-          <a
-            href="#"
-            className="text-[16px] font-normal text-white hover:underline"
-          >
-            View Investor Deck
-          </a>
         </div>
       </div>
     </section>

@@ -5,8 +5,7 @@ const COLUMNS = [
     title: "Investor Resources",
     links: [
       { label: "Investor Overview", href: "#top" },
-      { label: "Download Pitch Deck", href: "#" },
-      { label: "Book Investor Meeting", href: "#cta" },
+      { label: "Book Investor Meeting", href: "mailto:support@habisolo.com" },
       { label: "Investment Opportunity", href: "#cta" },
     ],
   },
@@ -25,11 +24,8 @@ const COLUMNS = [
   {
     title: "Legal & Compliance",
     links: [
-      { label: "Privacy Policy", href: "#" },
-      { label: "Terms of Service", href: "#" },
-      { label: "Investor Legal Terms", href: "#" },
-      { label: "GDPR Data Policy", href: "#" },
-      { label: "Cookie Settings", href: "#" },
+      { label: "Privacy Policy", href: "https://habisolo.com/en/privacy-policy" },
+      { label: "Terms of Service", href: "https://habisolo.com/en/terms-and-conditions" },
     ],
   },
 ];

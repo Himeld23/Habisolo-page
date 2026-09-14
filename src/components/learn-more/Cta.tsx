@@ -14,10 +14,15 @@ export default function TrustPassportCta() {
         </p>
 
         <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
-          <CtaButton href="/" fixedWidth={false}>
+          <CtaButton href="https://habisolo.com" fixedWidth={false}>
             Create Your Trust Passport
           </CtaButton>
-          <CtaButton href="/" fixedWidth={false} variant="ghost" showArrow={false}>
+          <CtaButton
+            href="https://habisolo.com"
+            fixedWidth={false}
+            variant="ghost"
+            showArrow={false}
+          >
             Explore Habisolo
           </CtaButton>
         </div>

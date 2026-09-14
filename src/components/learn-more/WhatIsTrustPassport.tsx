@@ -47,7 +47,7 @@ export default function WhatIsTrustPassport() {
         </p>
 
         <a
-          href="#"
+          href="https://habisolo.com"
           className="mt-2 inline-block font-semibold text-brand-700 hover:underline"
         >
           HABISOLO MASTER CORPORATE DOCUMENT.pdf

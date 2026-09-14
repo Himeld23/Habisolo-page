@@ -70,11 +70,7 @@ export default function WhereWeAreToday() {
                 className="flex items-start gap-4 overflow-hidden rounded-2xl bg-white  shadow-sm shadow-black/[0.03]"
               >
                 <Image
-                  src={card.image}
-                  alt=""
-                  width={44}
-                  height={44}
-                  className="w-[70px] h-[70px] shrink-0"
+                  src={card.image}  alt="" width={44} height={44} className="w-[70px] h-[70px] shrink-0"
                 />
                 <div className=" py-4">
                   <h3 className="text-base font-bold text-[#282828]">{card.title}</h3>
