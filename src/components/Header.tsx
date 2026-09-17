@@ -46,7 +46,7 @@ export default function Header() {
 
         <div className="hidden shrink-0 items-center gap-4 lg:flex">
           <GoogleTranslate />
-          <CtaButton href="https://habisolo.com" />
+          <CtaButton href="https://habisolo.com" fixedWidth={false} />
         </div>
 
         <button
@@ -77,6 +77,7 @@ export default function Header() {
             </div>
             <CtaButton
               href="https://habisolo.com"
+              fixedWidth={false}
               className="mt-2"
               onClick={() => setOpen(false)}
             />
