@@ -4,7 +4,7 @@ const COLUMNS = [
   {
     title: "Investor Resources",
     links: [
-      { label: "Investor Overview", href: "#top" },
+      { label: "Investor Overview", href: "#why-now" },
       { label: "Book Investor Meeting", href: "mailto:support@habisolo.com" },
       { label: "Investment Opportunity", href: "#cta" },
     ],
