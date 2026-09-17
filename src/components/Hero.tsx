@@ -35,7 +35,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-6">
-            <CtaButton href="https://habisolo.com" />
+            <CtaButton href="https://habisolo.com" fixedWidth={false} />
             <a
               href="/learn-more"
               className="font-semibold text-white/90 underline-offset-4 hover:underline"

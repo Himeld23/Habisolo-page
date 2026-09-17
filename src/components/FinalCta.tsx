@@ -15,7 +15,7 @@ export default function FinalCta() {
         </p>
 
         <div className="mt-9 flex flex-wrap items-center justify-center gap-6">
-          <CtaButton href="https://habisolo.com" />
+          <CtaButton href="https://habisolo.com" fixedWidth={false} />
           <a
             href="https://play.google.com/store/apps/details?id=com.habisolo.app&hl=en_IN"
             className="font-semibold text-white/90 underline-offset-4 hover:underline"
