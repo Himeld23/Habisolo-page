@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import CtaButton from "../CtaButton";
+import GoogleTranslate from "../GoogleTranslate";
 
 const NAV_LINKS = [
   { label: "Why Habisolo", href: "#why-habisolo" },
@@ -45,7 +46,8 @@ export default function InvestorHeader() {
           ))}
         </nav>
 
-        <div className="hidden shrink-0 xl:block">
+        <div className="hidden shrink-0 items-center gap-4 xl:flex">
+          <GoogleTranslate />
           <CtaButton href="mailto:support@habisolo.com" fixedWidth={false} variant="flat">
             Book a Meeting
           </CtaButton>
@@ -74,6 +76,9 @@ export default function InvestorHeader() {
                 {link.label}
               </a>
             ))}
+            <div className="mt-2">
+              <GoogleTranslate />
+            </div>
             <CtaButton
               href="mailto:support@habisolo.com"
               fixedWidth={false}
