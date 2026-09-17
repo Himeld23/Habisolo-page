@@ -18,7 +18,7 @@ const COLUMNS = [
       { label: "Product Ecosystem", href: "#product-ecosystem" },
       { label: "Business Model", href: "#business-model" },
       { label: "Why Invest Now?", href: "#why-now" },
-      { label: "The Founder", href: "#top" },
+      { label: "The Founder", href: "#founder" },
     ],
   },
   {

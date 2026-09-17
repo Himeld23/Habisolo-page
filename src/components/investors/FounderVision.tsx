@@ -3,7 +3,7 @@ import { Mail, ExternalLink } from "lucide-react";
 
 export default function FounderVision() {
   return (
-    <section className="bg-[#F7F7F7] py-24">
+    <section id="founder" className="bg-[#F7F7F7] py-24">
       <div className="mx-auto max-w-3xl px-6 text-center lg:px-10">
         <h2 className="text-3xl font-bold text-[#282828] sm:text-[40px]">
           Founder &amp; Vision
